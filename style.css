@@ -1,0 +1,81 @@
+/* style.css */
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background: #e0f7fa; 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1 { margin: 10px; }
+
+#character { 
+    font-size: 60px; 
+    margin: 20px; 
+    transition: transform 0.5s; 
+}
+
+.jump { transform: translateY(-60px);}
+.fall { transform: translateY(60px);}
+.half-fall { transform: translateY(30px);}
+
+.quest-list { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.quest-item { 
+    padding: 10px 15px; 
+    margin: 5px auto; 
+    width: 90%; 
+    max-width: 400px; 
+    background: #fff; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+}
+
+.quest-item.completed { 
+    background: #81c784; 
+    text-decoration: line-through; 
+}
+
+.calendar { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.day { 
+    width: 30px; 
+    height: 30px; 
+    margin: 2px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px; 
+    background: #fff; 
+    font-size: 12px; 
+}
+
+.day.complete { background: #81c784; color: #fff; }
+.day.partial { background: #ffb74d; color: #fff; }
+.day.empty { background: #eee; }
+
+#game-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #42a5f5;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+#game-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
